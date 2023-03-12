@@ -6,7 +6,12 @@
 }
 
 
-
+h1 {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+}
 
 header {
     display: flex;
@@ -30,8 +35,6 @@ li {
 
 .meme {
     border-radius: 10%;
-    max-width: 420px;
-    max-height: 420px;
     display: none;
 }
 @media (min-width: 320px) {
@@ -41,8 +44,8 @@ li {
         justify-content: space-between;
     }
     .meme {
-        max-width: 220px;
-        max-height: 220px; 
+        max-width: 320px;
+        max-height: 320px; 
     }
 }
 
@@ -53,8 +56,8 @@ li {
         justify-content: space-between;
     }
     .meme {
-        max-width: 320px;
-        max-height: 320px; 
+        max-width: 420px;
+        max-height: 420px; 
     }
 }
 
@@ -63,6 +66,10 @@ li {
         width: 1000px;
         display: flex;
         justify-content: space-between;
+    }
+    .meme {
+        max-width: 520px;
+        max-height: 520px; 
     }
 }
 
@@ -81,6 +88,10 @@ li:active .meme{
 p {
     display: flex;
     align-items: center;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
 }
 .plus {
     rotate: 45deg;
