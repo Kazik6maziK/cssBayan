@@ -24,17 +24,48 @@ ul {
 li {
     display: flex;
     position: relative;
-    flex-direction: column
+    flex-direction: column;
+    align-items: center;
 }
-li > div {
-    display: flex;
-}
+
 .meme {
     border-radius: 10%;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 420px;
+    max-height: 420px;
     display: none;
 }
+@media (min-width: 320px) {
+    li > div {
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .meme {
+        max-width: 220px;
+        max-height: 220px; 
+    }
+}
+
+@media (min-width: 820px) {
+    li > div {
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .meme {
+        max-width: 320px;
+        max-height: 320px; 
+    }
+}
+
+@media (min-width: 1600px) {
+    li > div {
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 li:hover .meme{
     transition: 1s;
     background-color: rgb(100, 237, 255);
@@ -48,15 +79,15 @@ li:active .meme{
     background-color: rgb(16, 71, 78);
 }
 p {
-    min-width: 370px;
     display: flex;
+    align-items: center;
 }
 .plus {
     rotate: 45deg;
     max-width: 30px;
     max-height: 30px;
 }
-li:hover .plus {
+li:active .plus {
     transition: 3s;
     rotate: 1800deg;
 }
