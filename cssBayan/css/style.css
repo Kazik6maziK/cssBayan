@@ -12,6 +12,9 @@ body {
     align-items: center;
     max-width: 1000px;
 }
+body:hover {
+    cursor: pointer;
+}
 h1 {
     font-family: 'Inika';
     font-style: normal;
@@ -45,10 +48,6 @@ li {
     background-color: aquamarine;
     border-radius: 5px;
 }
-.meme {
-    border-radius: 10%;
-    display: none;
-}
 @media (min-width: 320px) {
     li > div {
         width: 320px;
@@ -66,11 +65,13 @@ li {
         width: 700px;
         display: flex;
         justify-content: space-between;
+        p {font-size: 16px;}
     }
     .meme {
         max-width: 420px;
         max-height: 420px; 
     }
+    p {font-size: 20px;}
 }
 
 @media (min-width: 1600px) {
@@ -83,14 +84,20 @@ li {
         max-width: 520px;
         max-height: 520px; 
     }
+    p {font-size: 26px;}
 }
-
+.meme {
+    border-radius: 10%;
+    display: none;
+    opacity: 0;
+}
 li:hover .meme{
     transition: 1s;
     background-color: rgb(100, 237, 255);
 }
 li:hover .meme {
     transition: 1s;
+    opacity: 1;
     display: block;
 }
 li:active .meme{
@@ -103,7 +110,6 @@ p {
     font-family: 'Inika';
     font-style: normal;
     font-weight: 600;
-    font-size: 26px;
 }
 .plus {
     display: none;
